@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <a href="index.html">Go Back</a>
+    <br>
+    <h1>Contact Us</h1>
+    <style>
+
+        body {
+            background-color: aqua;
+            text-align: center;
+            
+        }
+        form{
+            display:inline-block;
+        }
+    
+        
+    </style>
+     
+    <form action="/submit" method="POST">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        <br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4
+        cols="50" required></textarea><br>
+        <input type="submit" id="submit" name="submit">
+        </form>
+    
+</body>
+</html>
